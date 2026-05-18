@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema ABM 🌸</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#ffd6e7,#ffeaf4);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        /* ==========================
+           CONTENEDOR PRINCIPAL
+        ========================== */
+
+        .menu-container{
+
+            background:white;
+            padding:45px;
+            border-radius:30px;
+            width:100%;
+            max-width:500px;
+
+            text-align:center;
+
+            border:3px solid #ffb3d1;
+
+            box-shadow:0 12px 30px rgba(0,0,0,0.1);
+        }
+
+        /* ==========================
+           TITULOS
+        ========================== */
+
+        h1{
+            color:#d63384;
+            margin-bottom:15px;
+            font-size:36px;
+        }
+
+        p{
+            color:#777;
+            margin-bottom:30px;
+            font-size:17px;
+        }
+
+        /* ==========================
+           BOTONES
+        ========================== */
+
+        .btn-menu{
+
+            display:block;
+
+            width:100%;
+
+            padding:16px;
+
+            margin:15px 0;
+
+            text-decoration:none;
+
+            color:white;
+
+            font-weight:bold;
+
+            font-size:17px;
+
+            border-radius:15px;
+
+            transition:0.3s;
+        }
+
+        /* BOTON ALTA */
+
+        .btn-alta{
+            background:#ff69b4;
+        }
+
+        .btn-alta:hover{
+            background:#ff4fa3;
+            transform:scale(1.03);
+        }
+
+        /* BOTON MOSTRAR */
+
+        .btn-vista{
+            background:#ff85c1;
+        }
+
+        .btn-vista:hover{
+            background:#ff5ca8;
+            transform:scale(1.03);
+        }
+
+        /* ==========================
+           DECORACIÓN
+        ========================== */
+
+        .emoji{
+            font-size:50px;
+            margin-bottom:15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="menu-container">
+
+        <div class="emoji">🌸💖✨</div>
+
+        <h1>Sistema de Gestión</h1>
+
+        <p>
+            Selecciona una opción para comenzar
+        </p>
+
+        <!-- BOTÓN ALTA -->
+        <a href="insertar.php"
+           class="btn-menu btn-alta">
+
+           ➕ Alta de Usuario
+
+        </a>
+
+        <!-- BOTÓN MOSTRAR -->
+        <a href="mostrar.php"
+           class="btn-menu btn-vista">
+
+           📋 Mostrar / Modificar
+
+        </a>
+
+    </div>
+
+</body>
+
+</html>
